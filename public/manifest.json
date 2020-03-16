@@ -1,25 +1,18 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 2,
+  "name": "5 Day Weather Forecast",
+  "description": "This is a extension to show you a 5 day weather forecast from the Openweather API",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "5 Day Weather Forecast"
+  },
+  "icons": {
+    "16": "./images/cloud-icon-16.png",
+    "48": "./images/cloud-icon-48.png",
+    "128": "./images/cloud-icon-128.png"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-BK8G/M6YQykjkwexBgjFK237rqvYrjveyfTKj86wzCY='; object-src 'self'",
+  "permissions": [
+  ]
 }
